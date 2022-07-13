@@ -1,0 +1,19 @@
+@import url(./Components.scss);
+@import url(./Detail.scss);
+@import url(./Chat.scss);
+@import url(./Result.scss);
+@import url(./FindEstate.scss);
+.App {
+  margin: 0 auto;
+  width: 340px !important;
+  max-width: 380px;
+  padding: 10px;
+  overflow: hidden !important;
+
+  // Header Title Apps
+  .header-app {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}

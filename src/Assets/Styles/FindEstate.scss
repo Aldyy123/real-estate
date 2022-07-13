@@ -1,0 +1,160 @@
+// Find Estate Class
+.find-estate {
+  display: grid;
+
+  hr {
+    width: 75%;
+    margin: 0 auto;
+    margin-right: 20px;
+  }
+
+  // Filter
+  >div {
+    display: flex;
+    cursor: pointer;
+    margin: 10px 0;
+    align-items: center;
+
+    >div {
+      margin: 0 10px;
+
+      img {
+        width: 100%;
+        vertical-align: middle;
+      }
+
+      span {
+        font-size: 10px;
+      }
+
+      h4 {
+        padding: 0;
+        font-size: 14px;
+        margin: 0;
+      }
+    }
+
+  }
+
+  // Button
+  .button-find {
+    justify-content: center;
+    display: flex;
+  }
+
+}
+
+.search-property {
+  width: 340px;
+
+  .form-input {
+    display: grid;
+    grid-template-columns: 50px 1fr;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+
+
+    &::after {
+      content: '';
+      border: 1px solid rgb(160, 160, 160, 0.4);
+      background: rgb(160, 160, 160, 0.4);
+      width: 340px;
+    }
+
+  }
+
+  .close {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+  }
+
+  .input {
+    &::before {
+      content: '';
+      border: 1px solid rgb(160, 160, 160, 0.4);
+      background: rgb(160, 160, 160, 0.4);
+      height: 10px;
+    }
+
+    input {
+      width: 100%;
+      border: none;
+
+
+      &::placeholder {
+        padding: 10px;
+      }
+
+      &:focus {
+        border: none;
+        outline: none;
+      }
+    }
+  }
+
+
+  .result-place {
+    margin-top: 10px;
+
+    span {
+      font-size: 10px;
+      color: #79828B;
+    }
+
+    .place {
+      display: grid;
+      grid-template-columns: 70px 1fr;
+      align-items: center;
+      cursor: pointer;
+
+      &::after {
+        content: '';
+        border: 1px solid rgb(160, 160, 160, 0.4);
+        background: rgb(160, 160, 160, 0.4);
+        width: 340px;
+      }
+    }
+  }
+}
+
+.type-property,
+.status-property {
+  display: grid;
+
+  .header {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    color: #79828B;
+
+    img {
+      width: 30px;
+      cursor: pointer;
+    }
+  }
+
+  hr {
+    width: 100%;
+    margin: 0 auto;
+    margin-right: 20px;
+  }
+
+  .list-type {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    button {
+      text-align: left;
+      border: none;
+      cursor: pointer;
+      outline: none;
+      background: transparent;
+      font-size: 14px;
+    }
+  }
+}

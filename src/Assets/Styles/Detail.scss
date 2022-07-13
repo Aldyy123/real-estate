@@ -1,0 +1,44 @@
+// Detail
+.detail{
+    .tab{
+        margin-top: 20px;
+        display: flex;
+        justify-content: space-evenly;
+    }
+    
+    .spec{
+        padding: 15px;
+    }
+
+    .information{
+        box-shadow: 0p -4px 16px #0000000F;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        height: max-content;
+
+        > div:first-child, .price-rent{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 10px;
+        }
+        .price-rent{
+            background: #F8F8F8;
+            padding: 20px;
+
+            > div{
+                display: flex;
+                flex-direction: column;
+            }
+        }
+    }
+
+    .profile{
+        padding: 10px;
+        border-top: 1px solid #E4E4E4;
+        border-bottom: 1px solid #E4E4E4;
+        display: flex;
+        gap: 20px;
+        align-items: center;
+    }
+}
